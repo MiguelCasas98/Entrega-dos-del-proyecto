@@ -1,0 +1,140 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilos de navbar */
+.greenblue-bg{
+    background-color: rgb(53, 194, 135);
+}
+.greenblue-bg li a:hover{
+    background-color: rgb(103, 243, 133);
+}
+
+/*estilos de body*/
+body{
+    /*propiedad de color de fondo*/
+    background-color: rgb(192, 175, 175);
+}
+/*estilos de header*/
+header{
+    text-align: center;
+   
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(214, 21, 53);
+}
+header nav ul{
+    list-style: none;
+
+}
+/*estilos de main*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(86, 30, 210);
+    text-align: center;
+}
+main nav ul li p{
+    text-decoration: none;
+    color: black;
+}
+main nav ul li a{
+    text-decoration: none;
+    color: rgb(86, 30, 210);
+    font-weight: bold;
+    
+}
+nav ul li a:hover{
+    
+    color: whitesmoke;
+    
+}
+/*estilos de main en productos*/
+main { 
+    display: flex;
+    flex-direction: column; /* apila verticalmente */
+    align-items: center;
+    gap: 10px; /* espacio entre ítems */ 
+    list-style: none; 
+    padding: 0;
+}
+header img{
+    width: 20%;
+    margin: 25px 0 100px 0;
+}
+
+
+/* estilos de section */
+
+    
+/*estilos de footer*/
+footer{
+    color: black;
+    text-align: center;
+}
+footer a{
+    color:rgb(86, 30, 210) ;
+    text-decoration: none;
+    text-align: center;
+}
+footer a:hover{
+    color: whitesmoke;
+
+}
+/*class*/
+header h1{
+    background-color: lightseagreen ;
+    color: black;
+    text-align: center;
+    }
+ /* mobile */
+.grid{
+   
+    display: grid;
+    height: 100vh;
+    
+    gap: 20px;
+    grid-template-areas: 
+        "header "
+        "main "
+        "aside "
+        "footer ";
+
+}
+
+/* tablet */
+@media(min-width:600px){
+    .grid{
+        grid-template-areas: 
+        "header header "
+        "aside aside "
+        "main main "
+        "footer  ";
+    }
+}
+
+/* desktop */
+@media(min-width:1024px){
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "section section header header"
+        "section section header header"
+        "main main aside aside"
+        "main main aside aside"
+        "footer footer footer footer";
+    }
+}
+        
+.header main aside section footer{
+background-color: rgb(175, 175, 192);
+grid-area:header main aside section footer;
+text-align: center;
+}
