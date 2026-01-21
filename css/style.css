@@ -129,8 +129,4 @@ header h1{
     }
 }
         
-.header main aside section footer{
-background-color: rgb(175, 175, 192);
-grid-area:header main aside section footer;
-text-align: center;
-}
+
